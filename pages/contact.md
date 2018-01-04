@@ -1,5 +1,7 @@
 ---
 layout: page
+header:
+  image_fullwidth: lorde_head1_colored_green.jpg
 title: "Contact"
 meta_title: "Contact and use our contact form"
 subheadline: "Wufoo-powered contact forms"

@@ -67,10 +67,11 @@ body.video cite { color: #fff; }
 
 /* Masthead
 ------------------------------------------------------------------- */
-
 #masthead {
     background-color: $primary-color;
+	transition: all 0.3s ease-out;
 }
+	
 #masthead-no-image-header {
     background-color: $primary-color;
 }
@@ -147,7 +148,7 @@ body.video cite { color: #fff; }
         margin-top: 80px;
     }
     #masthead {
-        height: 310px;
+        height: 350px;
     }
     #masthead-with-pattern {
         padding: 30px 0;
@@ -271,15 +272,28 @@ body.video cite { color: #fff; }
     font-weight: 300;
 }
 
+.berkantkz {
+	background: url('/images/lorde_footer_bw.jpg');
+    transition: all 0.3s ease-out;
+	}
+.berkantkz:hover {
+	background: url('/images/lorde_footer.jpg');
+    transition: all 0.3s ease-out;
+	}
+
 #footer {
     padding-top: 30px;
     padding-bottom: 20px;
-    background: $footer-bg;
+    background: #0a0a0a63; //$footer-bg;
+	background-position-y: -80px;
     color: $footer-color;
     }
 
     #footer a {
-        color: $footer-link-color;
+        color: $ci-7; //$footer-link-color;
+		&:hover {
+			color: #fff
+		}
     }
     #footer h4,
     #footer h5 {
@@ -294,8 +308,8 @@ body.video cite { color: #fff; }
 ------------------------------------------------------------------- */
 
 #subfooter {
-    background: $subfooter-bg;
-    color: $subfooter-color;
+    background: #0a0a0a63;
+    color: #fff; //$subfooter-color
     padding-top: 30px;
 }
 
@@ -304,7 +318,7 @@ body.video cite { color: #fff; }
 }
 
 .credits a {
-    color: $subfooter-link-color;
+	color: $ci-7; //$subfooter-link-color
     border: 0;
     text-transform: uppercase;
     &:hover {
